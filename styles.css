@@ -201,8 +201,8 @@ a {
 .text-overlay {
     position: absolute;
     bottom: 70px;
-    left: 135px; /* Asegúrate de que comience desde el borde izquierdo */
-    width: 40%; /* Ocupa aproximadamente un tercio del ancho total */
+    left: 135px;
+    width: 40%;
     padding: 10px;
     color: #FFFFFF;
 }
