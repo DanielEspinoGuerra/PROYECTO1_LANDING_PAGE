@@ -74,6 +74,7 @@ a {
     position: absolute;
     left: 40px; 
     color: white;
+    font-weight: 400;
 }
 
 #contenedor_2 {
@@ -143,6 +144,7 @@ a {
     line-height: 0.8;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
 }
 
 .slick-slide {
@@ -194,3 +196,28 @@ a {
     border-radius: 6px;
 }
 /* Slider */
+
+/* Texto sobre imagen coche rojo */
+.text-overlay {
+    position: absolute;
+    bottom: 70px;
+    left: 135px; /* Asegúrate de que comience desde el borde izquierdo */
+    width: 40%; /* Ocupa aproximadamente un tercio del ancho total */
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.text-overlay h4 {
+    margin: 0;
+    font-size: 55px;
+    font-weight: 400;
+}
+
+.text-overlay p {
+    margin: 5px 0 0 0;
+    font-size: 15px;
+    padding-right: 31px;
+    max-width: 310px;
+    font-weight: 400;
+}
+/* Texto sobre imagen coche rojo */
