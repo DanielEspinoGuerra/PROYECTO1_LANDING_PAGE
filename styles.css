@@ -132,3 +132,65 @@ a {
     border-color: #FFFFFF;
     margin-left: 10px;
 }
+
+/* Slider */
+.slick-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+    line-height: 0.8;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.slick-slide {
+    flex: 0 0 auto;
+    width: 600px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    scroll-snap-align: start;
+}
+
+.slick-slide > h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.slick-slide img {
+    width: 575px;
+    height: 295.63px;
+    padding: 10px 0 0 0;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.btn_more_info {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding: 12px 23.7px 12px 22.5px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.slick-slider::-webkit-scrollbar {
+    width: 13px;
+    height: 15px;
+}
+
+.slick-slider::-webkit-scrollbar-track {
+    background: #D9D9D9;
+    border-radius: 13px;
+}
+
+.slick-slider::-webkit-scrollbar-thumb {
+    background: #949494;
+    border-radius: 6px;
+}
+/* Slider */
