@@ -61,16 +61,8 @@ a {
     height: 30px;
 }
 
-@media (max-width: 500px) {
-    header > nav {
-        display: none;
-    }
-    .menu {
-        display: block;
-    }
-}
-
 .texto_portada {
+    font-family: "Abhaya Libre", sans-serif;
     position: absolute;
     left: 40px; 
     color: white;
@@ -96,6 +88,11 @@ a {
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
+    margin-top: 40px;
+}
+
+.top_margin {
+    margin-top: 20px;
 }
 
 .row {
@@ -104,18 +101,24 @@ a {
     width: 100%;
 }
 
-.row-img {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 36px;
-    padding-right: 36px;
+.row > h2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.row > h4 {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .img_contenedor_2 {
     width: 100%;
-    height: 300px;
+    height: 360px;
     object-fit: contain;
 }
 
@@ -165,11 +168,9 @@ a {
 }
 
 .slick-slide img {
-    width: 575px;
+    width: 600px;
     height: 295.63px;
     padding: 10px 0 0 0;
-    gap: 0;
-    justify-content: space-between;
 }
 
 .btn_more_info {
@@ -226,6 +227,7 @@ a {
 
 /* mercedes-maybach */
 .mercedes-maybach {
+    font-family: "Abhaya Libre", sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -268,6 +270,10 @@ a {
     height: auto;
     padding: 10px;
     gap: 10px;
+}
+
+.wheels-content-bottom {
+    display: none; /* Oculto en desktop */
 }
 /* mercedes-maybach */
 
@@ -477,4 +483,367 @@ a {
     padding-bottom: 20px;
     display: flex;
     justify-content: end;
+}
+
+
+/* Ajustes responsive generales */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 0 10px 0 10px;
+    }
+
+    #lista1 {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* Texto portada */
+    .texto_portada {
+        left: 20px;
+    }
+
+    h1.texto_portada {
+        font-size: 24px !important;
+        letter-spacing: 0.6px;
+        top: 80px !important;
+        left: 21px !important;
+    }
+
+    p.texto_portada {
+        font-size: 14px !important;
+        top: 110px !important;
+        left: 21px !important;
+    }
+
+    #img_portada {
+        width: 100% !important;
+    }
+
+    /* Contenedor 2 ajustes */
+    #contenedor_2 {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    #contenedor_2 ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .li_contenedor_2 {
+        width: auto;
+        max-width: 90%;
+        margin-top: 10px;
+    }
+
+    .top_margin {
+        margin-top: 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .row div:last-child {
+        display: none; /* Oculta los botones de colores */
+    }
+
+    .btn_contenedor_2 {
+        display: block;
+        text-align: center;
+        width: 64px; /* Ancho fijo para el botón */
+        margin: 0 auto;
+        font-size: 12px;
+    }
+
+    .img_contenedor_2 {
+        height: 153px;
+        object-fit: contain;
+    }
+
+    /* Texto Mercedes-dealer */
+    #div-mercedes-dealer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-left: 10% !important;
+        width: 80% !important;
+    }
+
+    #text-mercedes-dealer {
+        font-size: 35px !important;
+        line-height: 50px !important;
+        text-align: center;
+    }
+
+    #text-browse-dealers {
+        font-size: 25px !important;
+        text-align: center;
+        line-height: 23px !important;
+    }
+
+    /* Luces section */
+    #div-luces {
+        height: 329px !important;
+        object-fit: contain;
+    }
+
+    #div-luces-content {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text-luces-content {
+        font-size: 36px !important;
+        line-height: 37px !important;
+        text-align: center;
+        margin-bottom: 40px !important;
+        width: 80% !important;
+    }
+
+    #btn-luces-content {
+        font-size: 16px !important;
+    }
+
+    #img-luces {
+        height: 329px !important;
+        object-fit: contain;
+    }
+
+    /* Slider */
+    .slick-slider {
+        width: calc(100% - 40px); /* Ajustado para considerar los márgenes */
+        margin: 20px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .slick-slide {
+        width: 110% !important;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slick-slide h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .slick-slide > img {
+        width: 100% !important;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .slick-slide button {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    /* Ajustes del scrollbar */
+    .slick-slider::-webkit-scrollbar {
+        height: 8px;
+        width: 100%;
+    }
+    
+    .slick-slider::-webkit-scrollbar-track {
+        background: #D9D9D9;
+        border-radius: 2px;
+        width: calc(100% - 40px); /* Ajustado para coincidir con el contenedor */
+    }
+    
+    .slick-slider::-webkit-scrollbar-thumb {
+        background: #949494;
+        border-radius: 2px;
+        min-width: 90px;
+        max-width: 90px;
+    }
+
+    /* Red as tentation section */
+    #red-as-tentation {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #red-as-tentation > div {
+        height: auto !important;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #red-as-tentation img {
+        position: static !important;
+        height: auto !important;
+        width: 100% !important;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-overlay {
+        position: static;
+        width: 100%;
+        margin: 0;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        background: #e7e6e6;
+        color: #000000;   
+    }
+
+    .text-overlay h4 {
+        font-size: 20px;
+        line-height: 50px;
+        color: #000000;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-overlay p {
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Mercedes-maybach section */
+    .mercedes-maybach {
+        flex-direction: column;
+        padding: 0 15px 0 15px;
+    }
+
+    .wheels-content {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .wheels-content h4 {
+        font-size: 28px;
+        line-height: 41px;
+        font-weight: 400;
+        margin: 20px 0 20px 0;
+    }
+
+    .wheels-content p {
+        display: none; /* Ocultar el párrafo original en móvil */
+    }
+
+    .wheels-content .learn-more {
+        display: none; /* Ocultar el enlace original en móvil */
+    }
+
+    .wheels-content-bottom {
+        display: block; /* Mostrar en móvil */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .wheels-content-bottom p {
+        font-size: 14px;
+        color: #141615E5;
+        line-height: 21px;
+        font-weight: 400;
+        margin: 0;
+        text-align: left;
+    }
+
+    .wheels-content-bottom .learn-more {
+        display: inline-block;
+        padding-top: 29px;
+        font-size: 18px;
+        line-height: 15px;
+        color: #141615E5;
+        text-decoration: none;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+
+    .wheels-image img {
+        max-width: 100%;
+        border-radius: 15px;
+        margin:0;
+        padding:0;
+    }
+
+    .ocultar-en-mobile {
+        display: none;
+    }
+
+    /* Footer */
+    .footer-background-content {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .email-container {
+        width: 100%;
+    }
+
+    .email-container button {
+        padding: 15px 30px;
+        border: none;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 80px;
+        font-size: 16px;
+        font-weight: 539;
+    }
+
+    .custom-checkbox {
+        display: flex;
+        align-items: flex-start;
+        padding: 0 20px;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .custom-checkbox span {
+        flex-shrink: 0;
+        margin-top: 3px;
+    }
+
+    .custom-checkbox label {
+        display: inline;
+        text-align: left;
+        line-height: 1.4;
+    }
 }
