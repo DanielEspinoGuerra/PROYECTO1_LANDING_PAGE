@@ -155,7 +155,8 @@ a {
     background-color: var(--primary-color);
 }
 
-.btn_color_coches {
+/* Estilos para los botones de color */
+.color-button {
     width: 40px;
     height: 40px;
     min-width: 40px;
@@ -164,6 +165,109 @@ a {
     border-color: var(--primary-color);
     margin-left: 10px;
 }
+
+.color-button--grey { background-color: #C5C5C5; }
+.color-button--red { background-color: #B20000; }
+.color-button--blue { background-color: #0010A1; }
+.color-button--black { background-color: #000000; }
+.color-button--yellow { background-color: #E2C324; }
+.color-button--dark-red { background-color: #A10000; }
+.color-button--navy { background-color: #515F91; }
+.color-button--dark-red-2 { background-color: #AE3F3F; }
+
+/* Estilos para la sección de dealer */
+.dealer-section {
+    margin-top: 50px;
+}
+
+.dealer-content {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 60%;
+    font-weight: var(--font-weight-usual);
+}
+
+.dealer-title {
+    font-size: 85px;
+    margin-top: 0;
+    font-weight: var(--font-weight-usual);
+}
+
+.dealer-subtitle {
+    font-size: 25px;
+    margin-top: 0;
+    max-width: 500px;
+    line-height: 25px;
+}
+
+.lights-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lights-content {
+    background-color: #A2A2A282;
+    padding: 25px;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 50px;
+    max-width: 460px;
+}
+
+.lights-title {
+    font-size: 50px;
+    margin-top: 0;
+    color: var(--primary-color);
+    font-weight: var(--font-weight-usual);
+}
+
+.lights-button {
+    background-color: var(--primary-color);
+    border-radius: 80px;
+    padding: 21px 31px 18px 31px;
+    font-size: 14px;
+    margin: 0;
+    border: none;
+    font-weight: var(--font-weight-usual);
+}
+
+.lights-image {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Estilos para la sección de tentación */
+.tentation-section {
+    overflow: hidden;
+}
+
+.tentation-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.tentation-image {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
 
 /* Slider */
 .slick-slider {
@@ -595,7 +699,7 @@ a {
     }
 
     /* Texto Mercedes-dealer */
-    #div-mercedes-dealer {
+    .dealer-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -605,25 +709,25 @@ a {
         width: 80% !important;
     }
 
-    #text-mercedes-dealer {
+    .dealer-title {
         font-size: 35px !important;
         line-height: 50px !important;
         text-align: center;
     }
 
-    #text-browse-dealers {
+    .dealer-subtitle {
         font-size: 25px !important;
         text-align: center;
         line-height: 23px !important;
     }
 
     /* Luces section */
-    #div-luces {
+    .lights-section {
         height: 329px !important;
         object-fit: contain;
     }
 
-    #div-luces-content {
+    .lights-content {
         margin-left: 10px !important;
         margin-right: 10px !important;
         padding-left: 10px !important;
@@ -634,7 +738,7 @@ a {
         align-items: center;
     }
 
-    #text-luces-content {
+    .lights-title {
         font-size: 36px !important;
         line-height: 37px !important;
         text-align: center;
@@ -642,13 +746,12 @@ a {
         width: 80% !important;
     }
 
-    #btn-luces-content {
+    .lights-button {
         font-size: 16px !important;
     }
 
-    #img-luces {
+    .lights-image {
         height: 329px !important;
-        object-fit: contain;
     }
 
     /* Slider */
